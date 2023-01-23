@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh; /*100% altura do visor */
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.celular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.celular img{
+    max-width: 50rem;
+}
+
+.usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.usuario .login{
+    display: flex;
+    flex-direction: column;
+}
+.usuario .logout{
+    display: flex;
+    flex-direction: column;
+}
+.usuario .download{
+    display: flex;
+    flex-direction: column;
+}
+.download .img-baixar{
+    display: flex;
+}
+
+
+
+
+
