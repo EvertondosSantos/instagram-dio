@@ -5,7 +5,6 @@
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
-    border: 1px solid black;
 }
 
 body{
@@ -18,9 +17,11 @@ body{
     margin: 0;
 }
 
+
 .conteudo{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 60%;
     height: 100vh;
 }
@@ -37,28 +38,120 @@ body{
 
 .usuario{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 50%;
+    min-height: 34rem;
     flex-direction: column;
+    text-align: center;
 }
 .usuario .login{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    min-height: 19rem;
 }
+
+.usuario .login .logo{
+    height: 3rem;
+}
+
+.usuario .login .perfil{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6rem;
+}
+
+.usuario .login .login-conta{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.usuario .login p .login-remover{
+    color: #0095f6;
+    font-weight: bold;
+}
+
 .usuario .logout{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
 }
+
+.usuario .logout p{
+    color: rgb(160,160,160);
+}
+
+.usuario .logout p .mudar{
+    color: #0095f6;
+    font-weight: bold;
+}
+
 .usuario .download{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
 }
+
 .download .img-baixar{
     display: flex;
+    width: 100%;
+    justify-content: center ;
+    padding: 1rem;
+    align-items: center;
+}
+.download .img-baixar .img-appStore , .img-playStore{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.img-playStore{
+    margin-left: 1rem;
 }
 
+/* Responsividade */
+    /* media queries */
 
+@media (max-width: 1024px){
+    .conteudo{
+        width: 90%;
+    }
+}
 
-
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+    .celular{
+        display: none;
+    }
+    .conteudo{
+        width: 100%;
+        justify-content: center;
+    }
+    .usuario .login, .usuario .logout{
+        border: white;
+    }
+    .usuario .login, .usuario .logout{
+        min-width: 300px;
+    }
+}
 
